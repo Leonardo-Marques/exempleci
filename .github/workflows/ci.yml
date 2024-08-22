@@ -60,9 +60,10 @@ jobs:
         run: npm install
 
       - name: Set Git user
-        run: |
-          git config --global user.email "leopw@hotmail.com"
-          git config --global user.name "Leonardo-Marques"
+        run: git config --global user.email "leopw@hotmail.com"
+      
+      - name: Set Git user
+        run: git config --global user.name "Leonardo-Marques"
 
       - name: Run deploy
         run: npm run deploy
