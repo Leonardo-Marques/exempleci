@@ -59,11 +59,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Set Git user
+      - name: Set Git email
         run: git config --global user.email "leopw@hotmail.com"
       
       - name: Set Git user
         run: git config --global user.name "Leonardo-Marques"
+        
+      - name: Configure Git to use GitHub token
+        run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
 
       - name: Run deploy
         run: npm run deploy
