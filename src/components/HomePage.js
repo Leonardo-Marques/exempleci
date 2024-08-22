@@ -7,6 +7,7 @@ const HomePage = () => {
       <div className="home-box">
         <h1>Hello World</h1>
         <h2>GitHub CI + GitHub Pages + Deploy automático</h2>
+        <h2>?????</h2>
       </div>
     </div>
   );
